@@ -11,6 +11,14 @@ print(f"list1의 0번지 주소 : {id(list1[0])}")
 print(f"list2의 0번지 주소 : {id(list2[0])}")
 
 tuple1 = ([10, 20, 30], 10, 20)
+tuple2 = ([10, 20, 30], 10, 20)
+print(f"tuple1의 주소: {id(tuple1)}")
+print(f"tuple2의 주소 : {id(tuple2)}")
+tuple3 = (0, 10, 20)
+tuple4 = (0, 10, 20)
+print(f"tuple3의 주소: {id(tuple3)}")
+print(f"tuple4의 주소 : {id(tuple4)}")
+
 print(f"before tuple1 : {tuple1}")
 tuple1[0][0] = 20
 print(f"after tuple1 : {tuple1}")
@@ -20,10 +28,3 @@ list4 = []
 list5 = list6 = []
 print(f"list3과 list4의 주소 비교 결과 : {list3 is list4}")
 print(f"list5와 list6의 주소 비교 결과 : {list5 is list6}")
-
-
-
-
-
-
-
